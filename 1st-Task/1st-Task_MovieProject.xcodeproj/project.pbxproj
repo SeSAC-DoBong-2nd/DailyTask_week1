@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		9E882D5F2D1C1A0100D0E4C1 /* 1st-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1st-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E882D5F2D1C1A0100D0E4C1 /* 1st-Task_MovieProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1st-Task_MovieProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9E882D712D1C1A0300D0E4C1 /* Exceptions for "1st-Task" folder in "1st-Task" target */ = {
+		9E882D712D1C1A0300D0E4C1 /* Exceptions for "1st-Task" folder in "1st-Task_MovieProject" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 9E882D5E2D1C1A0100D0E4C1 /* 1st-Task */;
+			target = 9E882D5E2D1C1A0100D0E4C1 /* 1st-Task_MovieProject */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -24,7 +24,7 @@
 		9E882D612D1C1A0100D0E4C1 /* 1st-Task */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9E882D712D1C1A0300D0E4C1 /* Exceptions for "1st-Task" folder in "1st-Task" target */,
+				9E882D712D1C1A0300D0E4C1 /* Exceptions for "1st-Task" folder in "1st-Task_MovieProject" target */,
 			);
 			path = "1st-Task";
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		9E882D602D1C1A0100D0E4C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E882D5F2D1C1A0100D0E4C1 /* 1st-Task.app */,
+				9E882D5F2D1C1A0100D0E4C1 /* 1st-Task_MovieProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E882D5E2D1C1A0100D0E4C1 /* 1st-Task */ = {
+		9E882D5E2D1C1A0100D0E4C1 /* 1st-Task_MovieProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E882D722D1C1A0300D0E4C1 /* Build configuration list for PBXNativeTarget "1st-Task" */;
+			buildConfigurationList = 9E882D722D1C1A0300D0E4C1 /* Build configuration list for PBXNativeTarget "1st-Task_MovieProject" */;
 			buildPhases = (
 				9E882D5B2D1C1A0100D0E4C1 /* Sources */,
 				9E882D5C2D1C1A0100D0E4C1 /* Frameworks */,
@@ -76,11 +76,11 @@
 			fileSystemSynchronizedGroups = (
 				9E882D612D1C1A0100D0E4C1 /* 1st-Task */,
 			);
-			name = "1st-Task";
+			name = "1st-Task_MovieProject";
 			packageProductDependencies = (
 			);
 			productName = "1st-Task";
-			productReference = 9E882D5F2D1C1A0100D0E4C1 /* 1st-Task.app */;
+			productReference = 9E882D5F2D1C1A0100D0E4C1 /* 1st-Task_MovieProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E882D5A2D1C1A0100D0E4C1 /* Build configuration list for PBXProject "1st-Task" */;
+			buildConfigurationList = 9E882D5A2D1C1A0100D0E4C1 /* Build configuration list for PBXProject "1st-Task_MovieProject" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E882D5E2D1C1A0100D0E4C1 /* 1st-Task */,
+				9E882D5E2D1C1A0100D0E4C1 /* 1st-Task_MovieProject */,
 			);
 		};
 /* End PBXProject section */
@@ -328,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E882D5A2D1C1A0100D0E4C1 /* Build configuration list for PBXProject "1st-Task" */ = {
+		9E882D5A2D1C1A0100D0E4C1 /* Build configuration list for PBXProject "1st-Task_MovieProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E882D752D1C1A0300D0E4C1 /* Debug */,
@@ -337,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E882D722D1C1A0300D0E4C1 /* Build configuration list for PBXNativeTarget "1st-Task" */ = {
+		9E882D722D1C1A0300D0E4C1 /* Build configuration list for PBXNativeTarget "1st-Task_MovieProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E882D732D1C1A0300D0E4C1 /* Debug */,

@@ -613,7 +613,7 @@
         <!--NEW & HOT 검색-->
         <scene sceneID="qhH-bo-UBn">
             <objects>
-                <viewController id="TTA-Je-Udv" sceneMemberID="viewController">
+                <viewController id="TTA-Je-Udv" customClass="MainNewHotTabViewController" customModule="_st_Task_MovieProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfV-n9-on5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -640,17 +640,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrJ-gA-GrL">
                                 <rect key="frame" x="6" y="159" width="113" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="공개 예정" image="blue">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <state key="normal" title="공개 예정" image="blue"/>
+                                <connections>
+                                    <action selector="topBtnAction:" destination="TTA-Je-Udv" eventType="touchUpInside" id="yk5-Pj-bmi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFc-UR-4QY">
                                 <rect key="frame" x="119" y="160" width="145" height="31"/>
@@ -660,6 +655,9 @@
                                 <state key="normal" title="모두의 인기 콘텐츠" image="turquoise">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="topBtnAction:" destination="TTA-Je-Udv" eventType="touchUpInside" id="2PY-Xe-B9r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xj-DV-azF">
                                 <rect key="frame" x="264" y="159" width="129" height="33"/>
@@ -669,6 +667,9 @@
                                 <state key="normal" title="TOP 10 시리즈" image="pink">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="topBtnAction:" destination="TTA-Je-Udv" eventType="touchUpInside" id="HQ8-FY-0hN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B08-f3-tpx">
                                 <rect key="frame" x="44" y="353" width="305" height="28"/>
@@ -749,6 +750,13 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="NEW &amp; HOT 검색" id="lae-AB-1iF"/>
+                    <connections>
+                        <outlet property="firstBtn" destination="WrJ-gA-GrL" id="yZr-hi-w8r"/>
+                        <outlet property="secondBtn" destination="kFc-UR-4QY" id="rMJ-VG-MT6"/>
+                        <outlet property="subtitleCommentLabel" destination="mTy-bk-4ME" id="dOK-U6-33i"/>
+                        <outlet property="thirdBtn" destination="2xj-DV-azF" id="M1U-ME-qgy"/>
+                        <outlet property="titleCommentLabel" destination="B08-f3-tpx" id="p3y-Fn-pHw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSz-IV-3oJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

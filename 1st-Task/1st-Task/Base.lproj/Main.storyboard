@@ -44,7 +44,7 @@
                                     <fragment content="프로그램">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Heavy"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
                                             <font key="NSOriginalFont" size="14" name="FZLTTHB--B51-0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -631,7 +631,7 @@
                                     <fragment content="이런">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name=".AppleSDGothicNeoI-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <font key="NSOriginalFont" size="24" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -646,7 +646,7 @@
                                     <fragment content="찾으시는">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name=".AppleSDGothicNeoI-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <font key="NSOriginalFont" size="24" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -661,7 +661,7 @@
                                     <fragment content="작품이">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name=".AppleSDGothicNeoI-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <font key="NSOriginalFont" size="24" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -676,7 +676,7 @@
                                     <fragment content="없습니다">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name=".AppleSDGothicNeoI-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <font key="NSOriginalFont" size="24" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -891,6 +891,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KAL-l9-dTf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SJk-ev-Igi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.17341624149659865" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" systemColor="tintColor"/>

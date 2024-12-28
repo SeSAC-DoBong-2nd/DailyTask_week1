@@ -102,6 +102,8 @@ class MainHomeTabViewController: UIViewController {
         myBestListBtn.setTitle("내가 찜한 리스트", for: .normal)
         myBestListBtn.titleLabel?.font = UIFont.systemFont(ofSize: 10, weight: .medium)
         myBestListBtn.setImage(UIImage(systemName: "plus"), for: .normal)
+        myBestListBtn.tintColor = .lightGray
+        myBestListBtn.layer.opacity = 0.8
     }
     
     func labelSetUI() {

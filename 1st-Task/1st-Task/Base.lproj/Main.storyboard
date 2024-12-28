@@ -466,9 +466,7 @@
                                 <rect key="frame" x="199" y="487" width="158" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXS-xm-AZt">
                                 <rect key="frame" x="237" y="575" width="21" height="28"/>
@@ -1011,9 +1009,6 @@
         <image name="아바타" width="240" height="361"/>
         <image name="알라딘" width="240" height="361"/>
         <image name="왕의남자" width="240" height="361"/>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

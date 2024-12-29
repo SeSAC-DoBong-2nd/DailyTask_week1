@@ -24,29 +24,13 @@ class DailyTask2ndViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainImageView.image = UIImage(resource: .wordmark)
-        firstTextField.placeholder = "이메일 주소 또는 전화번호"
-        secondTextField.placeholder = "비밀번호"
-        thirdTextField.placeholder = "닉네임"
-        fourthTextField.placeholder = "위치"
-        fifthTextField.placeholder = "추천 코드 입력"
-        
-        secondTextField.isSecureTextEntry = true
-        
-        [firstTextField, secondTextField, thirdTextField, fourthTextField, fifthTextField].forEach({ i in
-            i?.textColor = .white
-            i?.backgroundColor = .lightGray
-            i?.layer.cornerRadius = 12
-            i?.textAlignment = .center
-            i?.keyboardType = .default
-            i?.borderStyle = .none
-        })
+        setUI()
         
         registerButton.setTitle("회원가입", for: .normal)
         registerButton.setTitleColor(.black, for: .normal)
         registerButton.setTitle("회원가입", for: .highlighted)
         registerButton.setTitleColor(.black, for: .highlighted)
-        registerButton.backgroundColor = .white
+        registerButton.tintColor = .white
         registerButton.layer.cornerRadius = 16
         
         moreInfoLabel.text = "추가 정보 입력"
@@ -58,24 +42,52 @@ class DailyTask2ndViewController: UIViewController {
         switchBtn.thumbTintColor = .blue
     }
     
-    @IBAction
-    func firstTextFieldReturnAction(_ sender: UITextField) {
+    func setUI() {
+        view.backgroundColor = .black
+        mainImageView.image = UIImage(resource: .wordmark)
+        
+        let textFieldList = [firstTextField, secondTextField, thirdTextField, fourthTextField, fifthTextField]
+        let textFieldPlaceholderTextList = ["이메일 주소 또는 전화번호", "비밀번호", "닉네임", "위치", "추천 코드 입력"]
+        
+        for i in 0..<textFieldList.count {
+            if textFieldList[i] == secondTextField {
+                setTextFieldUI(textField: textFieldList[i] ?? UITextField(), phText: textFieldPlaceholderTextList[i], isSecureTextEntry: true)
+            } else {
+                setTextFieldUI(textField: textFieldList[i] ?? UITextField(), phText: textFieldPlaceholderTextList[i])
+            }
+        }
     }
     
-    @IBAction
-    func secondTextFieldReturnAction(_ sender: UITextField) {
+    func setTextFieldUI(textField: UITextField, phText placeholderText: String, isSecureTextEntry: Bool = false) {
+        textField.textColor = .white
+        textField.backgroundColor = .lightGray
+        textField.layer.cornerRadius = 12
+        textField.textAlignment = .center
+        textField.keyboardType = .default
+        textField.borderStyle = .none
+        textField.placeholder = placeholderText
+        textField.isSecureTextEntry = isSecureTextEntry
     }
     
-    @IBAction
-    func thirdTextFieldReturnAction(_ sender: UITextField) {
+    
+    @IBAction func textFieldKeyboardDismiss1(_ sender: UITextField) {
+        view.endEditing(true)
     }
     
-    @IBAction
-    func fourthTextFieldReturnAction(_ sender: UITextField) {
+    @IBAction func textFieldKeyboardDismiss2(_ sender: UITextField) {
+        view.endEditing(true)
     }
     
-    @IBAction
-    func fifthTextFieldReturnAction(_ sender: UITextField) {
+    @IBAction func textFieldKeyboardDismiss3(_ sender: UITextField) {
+        view.endEditing(true)
+    }
+    
+    @IBAction func textFieldKeyboardDismiss4(_ sender: UITextField) {
+        view.endEditing(true)
+    }
+    
+    @IBAction func textFieldKeyboardDismiss5(_ sender: UITextField) {
+        view.endEditing(true)
     }
     
     @IBAction
@@ -84,3 +96,10 @@ class DailyTask2ndViewController: UIViewController {
     }
     
 }
+
+/// 5개의 textField에 아래와 같은 함수의 거터를 연결시켜 return 키로 동작시키려 하였으나 제일 처음 우클릭 드래그로 액션을 만든 firstTextField만 동작하였습니다.
+/// 그래서 위와 같이 5개의 액션을 생성하는 코드로 진행하였습니다.
+//@IBAction func textFieldKeyboardDismiss(_ sender: UITextField) {
+//    print("케케몬")
+//    view.endEditing(true)
+//}

@@ -9,6 +9,7 @@ import UIKit
 
 class MainNewHotTabViewController: UIViewController {
     
+    @IBOutlet var navItem: UINavigationItem!
     @IBOutlet var titleCommentLabel: UILabel!
     @IBOutlet var subtitleCommentLabel: UILabel!
     
@@ -18,13 +19,31 @@ class MainNewHotTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topBtnAction(firstBtn)
         setUI()
+        topBtnAction(firstBtn)
     }
-    
+//    다른 영화, 시리즈, 배우, 감독 또는 장르를 검색해 보세요.
     func setUI() {
+        view.backgroundColor = .black
+        
+        navItem.title = "NEW & HOT 검색"
+        
         [firstBtn, secondBtn, thirdBtn].forEach({ i in
             i?.layer.cornerRadius = 8
+        })
+        
+        firstBtn.setImage(.blue, for: .normal)
+        firstBtn.setTitle("공개 예정", for: .normal)
+        
+        secondBtn.setImage(.turquoise, for: .normal)
+        secondBtn.setTitle("모두의 인기 콘텐츠", for: .normal)
+        
+        thirdBtn.setImage(.pink, for: .normal)
+        thirdBtn.setTitle("TOP 10 시리즈", for: .normal)
+        
+        [titleCommentLabel, subtitleCommentLabel].forEach({ i in
+            i?.textAlignment = .center
+            i?.textColor = .white
         })
     }
 
@@ -51,4 +70,5 @@ class MainNewHotTabViewController: UIViewController {
         titleCommentLabel.text = titleCommentsArr.randomElement()
         subtitleCommentLabel.text = subtitleCommentsDic[titleCommentLabel.text ?? ""]
     }
+    
 }

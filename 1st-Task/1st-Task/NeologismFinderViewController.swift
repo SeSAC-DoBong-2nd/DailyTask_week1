@@ -19,9 +19,9 @@ class NeologismFinderViewController: UIViewController {
         "쪄죽따": "'쪄 죽어도 따뜻한 게 좋다'의 줄임말로, 더운 날씨에도 따뜻한 것을 선호한다는 뜻",
         "갓생": "갓처럼 완벽하게 사는 삶을 의미하는 신조어",
         "좋못사": "'좋아하지만 못 사귀는 사람'의 줄임말로, 짝사랑의 의미",
-        "꾸안꾸": "'꾸민 듯 안 꾸민 듯'을 줄인 말로, 자연스러운 스타일링을 뜻함"
+        "꾸안꾸": "'꾸민 듯 안 꾸민 듯'을 줄인 말로, 자연스러운 스타일링을 뜻함",
+        "JMT": "엄청 맛있다는 것을 뜻함"
     ]
-    
     
     @IBOutlet var recommendBtn1: UIButton!
     @IBOutlet var recommendBtn2: UIButton!
@@ -81,15 +81,20 @@ class NeologismFinderViewController: UIViewController {
 
     @IBAction
     func keyboardDisMiss(_ sender: Any) {
-        backgroundImageView.image = .background1
-        resultLabel.isHidden = false
-        
-        if neologismDic[searchTextField.text ?? ""] != nil {
-            resultLabel.text = neologismDic[searchTextField.text ?? ""]
-        } else {
-            resultLabel.text = "검색결과가 없습니다."
+        if let button = sender as? UIButton {
+            if button == searchButton {
+                backgroundImageView.image = .background1
+                resultLabel.isHidden = false
+                
+                let text = (searchTextField.text ?? "").uppercased()
+                
+                if neologismDic[text] != nil {
+                    resultLabel.text = neologismDic[text]
+                } else {
+                    resultLabel.text = "검색결과가 없습니다."
+                }
+            }
         }
-        
         view.endEditing(true)
     }
     

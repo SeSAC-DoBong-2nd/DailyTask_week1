@@ -16,70 +16,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gL5-dH-1Pb">
-                                <rect key="frame" x="50" y="245" width="292" height="34"/>
+                                <rect key="frame" x="50" y="216" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="firstTextFieldReturnAction:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="J3b-Ti-ndu"/>
+                                    <action selector="textFieldKeyboardDismiss1:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="jy2-Qt-qiF"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yJw-j1-DKI">
-                                <rect key="frame" x="50" y="296" width="292" height="34"/>
+                                <rect key="frame" x="50" y="267" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="secondTextFieldReturnAction:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="nxO-E7-7c8"/>
+                                    <action selector="textFieldKeyboardDismiss2:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="vAP-zl-VcP"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnK-O0-R24">
-                                <rect key="frame" x="50" y="351" width="292" height="34"/>
+                                <rect key="frame" x="50" y="322" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="thirdTextFieldReturnAction:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="Q1Q-cG-bLP"/>
+                                    <action selector="textFieldKeyboardDismiss3:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="J4t-A9-TE3"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-XE-1z4">
-                                <rect key="frame" x="50" y="403" width="292" height="34"/>
+                                <rect key="frame" x="50" y="374" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="fourthTextFieldReturnAction:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="QeU-EP-z9t"/>
+                                    <action selector="textFieldKeyboardDismiss4:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="bhQ-fP-ccg"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycW-VN-ncJ">
-                                <rect key="frame" x="50" y="454" width="292" height="34"/>
+                                <rect key="frame" x="50" y="425" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="fifthTextFieldReturnAction:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="w1a-si-nsQ"/>
+                                    <action selector="textFieldKeyboardDismiss5:" destination="Y6W-OH-hqX" eventType="editingDidEndOnExit" id="lQw-la-7Hc"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXH-Lx-aYs">
-                                <rect key="frame" x="50" y="507" width="292" height="55"/>
+                                <rect key="frame" x="50" y="478" width="292" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="didTapRegisterBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cET-dU-w5m"/>
+                                    <action selector="didTapRegisterBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3eS-x6-JnB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhZ-0X-v3d">
-                                <rect key="frame" x="50" y="574" width="96" height="33"/>
+                                <rect key="frame" x="50" y="545" width="96" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-Br-01t">
-                                <rect key="frame" x="293" y="574" width="49" height="31"/>
+                                <rect key="frame" x="293" y="545" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORM-uf-vri">
@@ -88,7 +86,6 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="fifthTextField" destination="ycW-VN-ncJ" id="EpZ-dS-8zy"/>
